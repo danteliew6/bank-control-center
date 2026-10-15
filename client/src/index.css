@@ -1,0 +1,46 @@
+@import "@databricks/appkit-ui/styles.css";
+
+/* ===== Neutral theme =====
+   Brand blue #2563EB primary; teal/aqua/green for secondary accents & non-semantic
+   chart series. Fraud-risk semantics (red/amber/yellow/green) are NOT brand colors and
+   are set inline on the data surfaces — do not encode risk with these tokens. */
+:root {
+  --radius: 0.625rem;
+  --primary: #2563EB;              /* brand blue — buttons, active nav, links, focus */
+  --primary-foreground: #ffffff;
+  --ring: #2563EB;
+  --accent: #EFF4FF;               /* very light blue surface */
+  --accent-foreground: #1E40AF;
+  /* non-semantic chart palette: brand family blue → teal → aqua → green */
+  --chart-1: #2563EB;
+  --chart-2: #0EA5E9;
+  --chart-3: #38BDF8;
+  --chart-4: #6366F1;
+  --chart-5: #1E40AF;
+  /* Brand tokens for custom UI */
+  --ab-blue: #2563EB;
+  --ab-deep: #1E40AF;
+  --ab-teal: #0EA5E9;
+  --ab-aqua: #38BDF8;
+  --ab-green: #6366F1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #60A5FA;            /* lightened brand blue for dark surfaces */
+    --primary-foreground: #0b1d4a;
+    --ring: #60A5FA;
+    --accent: #16264d;
+    --accent-foreground: #DBE7FF;
+    --chart-1: #60A5FA;
+    --chart-2: #38BDF8;
+    --chart-3: #818CF8;
+    --chart-4: #A5B4FC;
+    --chart-5: #2563EB;
+  }
+}
+
+/* Brand gradient — header bar / hero / section accents */
+.ab-header {
+  background: linear-gradient(90deg, #6366F1 0%, #38BDF8 30%, #0EA5E9 60%, #2563EB 100%);
+}
