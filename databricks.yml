@@ -58,5 +58,5 @@ targets:
       genie_space_id: 01f1a6a6720b178c97b9b02beb3d0741
       genie_space_name: Amar Bank Retail Assistant
       serving_endpoint_name: amarbank-txn-fraud
-      lakebase_branch: projects/amarbank-cc-db/branches/production
-      lakebase_database: projects/amarbank-cc-db/branches/production/databases/databricks-postgres
+      lakebase_branch: projects/bank-cc-db/branches/production
+      lakebase_database: projects/bank-cc-db/branches/production/databases/databricks-postgres
